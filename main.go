@@ -40,7 +40,7 @@ func downloadVideoAndExtractAudio(id string, out io.Writer) error {
 	r, w := io.Pipe()
 	defer r.Close()
 
-	ytdl := exec.Command("youtube-dl", url, "-o-")
+	ytdl := exec.Command("yt-dlp", url, "-o-")
 	ytdl.Stdout = w         // PIPE INPUT
 	ytdl.Stderr = os.Stderr // show progress
 

@@ -1,4 +1,4 @@
-# Serverless video streamer (`youtube-dl`)
+# Serverless video streamer (`yt-dlp`)
 
 A serverless application that uses `youtube-dl` to quickly stream videos from media sites.
 
